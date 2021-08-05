@@ -8,7 +8,7 @@ import time
 
 #main class
 class Matrix:
-    def __init__(self, app, font_size=3):
+    def __init__(self, app, font_size=6):
         self.app = app
         self.FONT_SIZE = font_size
         self.SIZE = self.ROWS, self.COLS = app.HEIGHT // font_size, app.WIDTH // font_size
@@ -20,7 +20,7 @@ class Matrix:
         self.cols_speed = np.random.randint(100, 250, size=self.SIZE)
         self.prerendered_chars = self.get_prerendered_chars()
 
-        self.image = self.get_image('ds.jpg')
+        self.image = self.get_image('zero.jpg')
 
     def get_image(self, path_to_file):
         image = pg.image.load(path_to_file)
@@ -73,7 +73,7 @@ class Matrix:
 
 class MatrixVision:
     def __init__(self):
-        self.RES = self.WIDTH, self.HEIGHT = 400, 400
+        self.RES = self.WIDTH, self.HEIGHT = 704, 910
         pg.init()
         self.screen = pg.display.set_mode(self.RES)
         self.surface = pg.Surface(self.RES)
