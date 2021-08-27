@@ -31,6 +31,7 @@ class Matrix:
         return pixel_array
 
     # We need to pre-render some shars for optimization
+    # TODO Get more optimize this block
     def get_prerendered_chars(self):
         char_colors = [(0, green, 0) for green in range(256)]
         prerendered_chars = {}
