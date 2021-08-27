@@ -6,7 +6,7 @@ import time
 
 
 
-#main class
+# main class for image MATRIXOFICATION ))
 class Matrix:
     def __init__(self, app, font_size=6):
         self.app = app
