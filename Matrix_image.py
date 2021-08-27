@@ -30,7 +30,7 @@ class Matrix:
         pixel_array = pg.pixelarray.PixelArray(image)
         return pixel_array
 
-
+    # We need to pre-render some shars for optimization
     def get_prerendered_chars(self):
         char_colors = [(0, green, 0) for green in range(256)]
         prerendered_chars = {}
