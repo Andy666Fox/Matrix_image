@@ -9,6 +9,7 @@ import time
 # main class for image MATRIXOFICATION ))
 class Matrix:
     def __init__(self, app, font_size=6):
+        
         self.app = app
         self.FONT_SIZE = font_size
         self.SIZE = self.ROWS, self.COLS = app.HEIGHT // font_size, app.WIDTH // font_size
