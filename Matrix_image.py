@@ -6,6 +6,8 @@ import time
 
 
 
+image_path = input('Enter path to the image: ')
+
 # main class for image MATRIXOFICATION ))
 class Matrix:
     def __init__(self, app, font_size=6):
@@ -23,7 +25,7 @@ class Matrix:
 
         # Change path to image here
         # TODO  Make image change easier
-        self.image = self.get_image('zero.jpg')
+        self.image = self.get_image(image_path)
 
     def get_image(self, path_to_file):
         image = pg.image.load(path_to_file)
