@@ -3,7 +3,7 @@ import pygame as pg
 import numpy as np
 import random
 import time
-from funcs import  symbols_extract
+from funcs import  symbols_extract, get_image_size
 
 
 # In order not to write the path to the file every time and not to go into the code myself, 
@@ -13,12 +13,12 @@ image_path = input('Enter path to the image: ')
 
 # main class for image MATRIXOFICATION ))
 class Matrix:
-    def __init__(self, app, font_size=8):
+    def __init__(self, app, font_size=7):
         
         self.app = app
         self.FONT_SIZE = font_size
         self.SIZE = self.ROWS, self.COLS = app.HEIGHT // font_size, app.WIDTH // font_size
-        self.katakana = np.array([random.choice(symbols_extract(image_path)) for i in range(100)] + ['' for i in range(1)])
+        self.katakana = np.array([random.choice(symbols_extract(image_path)) for i in range(100)] + [' ' for i in range(5)])
         self.font = pg.font.SysFont('Arial', font_size, bold=True)
 
         self.matrix = np.random.choice(self.katakana, self.SIZE)
@@ -75,14 +75,15 @@ class Matrix:
                     _, red, green, blue = pg.Color(self.image[pos])
                     if red and green and blue:
                         color = (red + green + blue) // 3
-                        color = 255 if 248 < color < 250 else color
+                        color = 255 if 240 < color < 250 else color
                         char = self.prerendered_chars[(char, (0, color, 0))]
                         char.set_alpha(color)
                         self.app.surface.blit(char, pos)
+                        
 
 class MatrixVision:
     def __init__(self):
-        self.RES = self.WIDTH, self.HEIGHT = 704, 910
+        self.RES = self.WIDTH, self.HEIGHT = get_image_size(image_path)
         pg.init()
         self.screen = pg.display.set_mode(self.RES)
         self.surface = pg.Surface(self.RES)
@@ -100,9 +101,10 @@ class MatrixVision:
             self.draw()
             [exit() for i in pg.event.get() if i.type == pg.QUIT]
             pg.display.flip()
-            self.clock.tick(200)
+            self.clock.tick(30)
 
 if __name__ == '__main__':
     app = MatrixVision()
     app.run()
+    
 
