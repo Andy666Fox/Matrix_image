@@ -24,7 +24,7 @@ class Matrix:
         self.prerendered_chars = self.get_prerendered_chars()
 
         # Change path to image here
-        # TODO  Make image change easier
+        # TODO  Make image change more easier
         self.image = self.get_image(image_path)
 
     def get_image(self, path_to_file):
