@@ -6,6 +6,8 @@ import time
 from funcs import  symbols_extract
 
 
+# In order not to write the path to the file every time and not to go into the code myself, 
+# I left this task to the user. Now it's both convenient and cool
 
 image_path = input('Enter path to the image: ')
 
@@ -34,7 +36,7 @@ class Matrix:
         pixel_array = pg.pixelarray.PixelArray(image)
         return pixel_array
 
-    # We need to pre-render some shars for optimization
+    # We need to pre-render some chars for optimization
     # TODO Get more optimize this block
     def get_prerendered_chars(self):
         char_colors = [(0, green, 0) for green in range(256)]
