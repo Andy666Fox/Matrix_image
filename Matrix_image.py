@@ -11,12 +11,12 @@ image_path = input('Enter path to the image: ')
 
 # main class for image MATRIXOFICATION ))
 class Matrix:
-    def __init__(self, app, font_size=6):
+    def __init__(self, app, font_size=8):
         
         self.app = app
         self.FONT_SIZE = font_size
         self.SIZE = self.ROWS, self.COLS = app.HEIGHT // font_size, app.WIDTH // font_size
-        self.katakana = np.array([random.choice([0,2]) for i in range(100)] + ['' for i in range(1)])
+        self.katakana = np.array([random.choice(['z', 'e', 'r', 'o', 't', 'w']) for i in range(100)] + ['' for i in range(1)])
         self.font = pg.font.SysFont('Arial', font_size, bold=True)
 
         self.matrix = np.random.choice(self.katakana, self.SIZE)
