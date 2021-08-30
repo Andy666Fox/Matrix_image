@@ -6,6 +6,7 @@ import time
 
 
 
+
 image_path = input('Enter path to the image: ')
 
 # main class for image MATRIXOFICATION ))
