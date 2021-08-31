@@ -10,10 +10,11 @@ from funcs import  symbols_extract, get_image_size
 # I left this task to the user. Now it's both convenient and cool
 
 image_path = input('Enter path to the image: ')
+font_SIZE = int(input('Change the font size (1-20): '))
 
 # main class for image MATRIXOFICATION ))
 class Matrix:
-    def __init__(self, app, font_size=7):
+    def __init__(self, app, font_size=font_SIZE):
         
         self.app = app
         self.FONT_SIZE = font_size
