@@ -8,9 +8,9 @@ from funcs import  symbols_extract, get_image_size
 
 # In order not to write the path to the file every time and not to go into the code myself, 
 # I left this task to the user. Now it's both convenient and cool
-
 image_path = input('Enter path to the image: ')
 font_SIZE = int(input('Change the font size (1-20): '))
+
 
 # main class for image MATRIXOFICATION ))
 class Matrix:
@@ -82,6 +82,7 @@ class Matrix:
                         self.app.surface.blit(char, pos)
                         
 
+# Main worker
 class MatrixVision:
     def __init__(self):
         self.RES = self.WIDTH, self.HEIGHT = get_image_size(image_path)
