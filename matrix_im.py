@@ -2,7 +2,6 @@
 import pygame as pg
 import numpy as np
 import random
-import time
 from funcs import  symbols_extract, get_image_size
 
 
