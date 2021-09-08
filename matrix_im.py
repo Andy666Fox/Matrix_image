@@ -14,6 +14,12 @@ font_SIZE = int(input('Change the font size (1-20): '))
 # main class for image MATRIXOFICATION ))
 class Matrix:
     def __init__(self, app, font_size=font_SIZE):
+        """ Initialization function. Sets the parameters of the main window and symbols
+
+        Args:
+            app (self): Main window
+            font_size ([int], optional): The size of the characters. Affects the display quality. Defaults to font_SIZE.
+        """
         
         self.app = app
         self.FONT_SIZE = font_size
