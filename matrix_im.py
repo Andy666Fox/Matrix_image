@@ -69,6 +69,8 @@ class Matrix:
 
     
     def run(self):
+        """Program start function
+        """
         frames = pg.time.get_ticks()
         self.change_chars(frames)
         self.shift_column(frames)
