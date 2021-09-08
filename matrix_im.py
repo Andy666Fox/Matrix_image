@@ -54,6 +54,12 @@ class Matrix:
     # We need to pre-render some chars for optimization
     # TODO Get more optimize this block
     def get_prerendered_chars(self):
+        """It is quite expensive to prepare and render symbols at runtime.
+           This function prepares a block of symbols before executing the program. All that remains is to draw them.
+
+        Returns:
+            [dict]: Returns a dictionary of symbols ready to be drawn
+        """
         char_colors = [(0, green, 0) for green in range(256)]
         prerendered_chars = {}
         for char in self.katakana:
