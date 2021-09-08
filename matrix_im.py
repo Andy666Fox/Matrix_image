@@ -27,12 +27,12 @@ class Matrix:
         self.katakana = np.array([random.choice(symbols_extract(image_path)) for i in range(100)] + [' ' for i in range(5)])
         self.font = pg.font.SysFont('Arial', font_size, bold=True)
 
+        # This block is responsible for creating a random position for symbols and adding them to the screen.
         self.matrix = np.random.choice(self.katakana, self.SIZE)
         self.char_intervals = np.random.randint(25, 50, size=self.SIZE)
         self.cols_speed = np.random.randint(100, 250, size=self.SIZE)
         self.prerendered_chars = self.get_prerendered_chars()
 
-        # Change path to image here
         # TODO  Make image change more easier
         self.image = self.get_image(image_path)
 
