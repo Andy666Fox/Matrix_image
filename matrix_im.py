@@ -37,6 +37,15 @@ class Matrix:
         self.image = self.get_image(image_path)
 
     def get_image(self, path_to_file):
+        """Function for representing an image as pg.PixelArray (analog of np.array)
+
+        Args:
+            path_to_file ([str]): The path to the file from the user
+
+        Returns:
+            [pg.PixelArray]: Format for further processing
+        """
+        
         image = pg.image.load(path_to_file)
         image = pg.transform.scale(image, self.app.RES)
         pixel_array = pg.pixelarray.PixelArray(image)
