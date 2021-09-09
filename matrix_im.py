@@ -101,6 +101,8 @@ class Matrix:
 
     
     def draw(self):
+        """Main draw function
+        """
         for y, row in enumerate(self.matrix):
             for x, char in enumerate(row):
                 if char:
@@ -116,6 +118,8 @@ class Matrix:
 
 # Main worker
 class MatrixVision:
+    """Convenient class helper
+    """
     def __init__(self):
         self.RES = self.WIDTH, self.HEIGHT = get_image_size(image_path)
         pg.init()
@@ -136,6 +140,7 @@ class MatrixVision:
             [exit() for i in pg.event.get() if i.type == pg.QUIT]
             pg.display.flip()
             self.clock.tick(30)
+
 
 if __name__ == '__main__':
     app = MatrixVision()
