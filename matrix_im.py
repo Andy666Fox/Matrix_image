@@ -78,6 +78,11 @@ class Matrix:
 
     
     def shift_column(self, frames):
+        """Function for calculating the speed of falling symbols
+
+        Args:
+            frames (int): number of frames per unit of time
+        """
         num_cols = np.argwhere(frames % self.cols_speed == 0)
         num_cols = num_cols[:, 1]
         num_cols = np.unique(num_cols)
@@ -85,6 +90,11 @@ class Matrix:
 
     
     def change_chars(self, frames):
+        """Function for creating a new set of symbols
+
+        Args:
+            frames (int): number of frames per unit of time
+        """
         mask = np.argwhere(frames % self.char_intervals == 0)
         new_chars = np.random.choice(self.katakana, mask.shape[0])
         self.matrix[mask[:, 0], mask[:, 1]] = new_chars
