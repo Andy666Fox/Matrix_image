@@ -36,7 +36,7 @@ class Matrix:
         # TODO  Make image change more easier
         self.image = self.get_image(image_path)
 
-    def get_image(self, path_to_file):
+    def get_image(self, path_to_file: str) -> pg.PixelArray:
         """Function for representing an image as pg.PixelArray (analog of np.array)
 
         Args:
@@ -77,7 +77,7 @@ class Matrix:
         self.draw()
 
     
-    def shift_column(self, frames):
+    def shift_column(self, frames: int) -> np.roll:
         """Function for calculating the speed of falling symbols
 
         Args:
@@ -89,7 +89,7 @@ class Matrix:
         self.matrix[:, num_cols] = np.roll(self.matrix[:, num_cols], shift=1, axis=0)
 
     
-    def change_chars(self, frames):
+    def change_chars(self, frames: int) -> list:
         """Function for creating a new set of symbols
 
         Args:
