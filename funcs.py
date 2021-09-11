@@ -1,6 +1,7 @@
 
 import os
 import pygame as pg
+from PIL import  Image
 
 def symbols_extract(path_to_image: str) -> list:
     
@@ -25,3 +26,15 @@ def get_image_size(path: str) -> tuple:
         [tuple]: Returns a tuple with the dimensions of the image
     """
     return pg.image.load(path).get_size()
+
+def extension_check(path: str) -> str:
+    if path[-4:] == '.jpg':
+        pass
+    else:
+        image = Image.open(path)
+        bg = Image.new("RGB", image.size, (255,255,255))
+        bg.paste(image,image)
+        bg.save(f'{path[:-4]}.jpg')
+        os.remove(path)
+
+    return path[:-4] + '.jpg'

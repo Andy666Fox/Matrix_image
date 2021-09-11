@@ -2,12 +2,13 @@
 import pygame as pg
 import numpy as np
 import random
-from funcs import  symbols_extract, get_image_size
+from funcs import  symbols_extract, get_image_size, extension_check
 
 
 # In order not to write the path to the file every time and not to go into the code myself, 
 # I left this task to the user. Now it's both convenient and cool
 image_path = input('Enter path to the image: ')
+image_path = extension_check(image_path)
 font_SIZE = int(input('Change the font size (1-20): '))
 
 
