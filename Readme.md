@@ -8,6 +8,8 @@ The project is based on the repository of the excellent developer [Standalone Co
 
 The project is inspired by the film Matrix and a Youtube video by *Standalone Coder* (~~And sprinkled with my deep dark fantasies~~). Substituting any image you can get its version from the **MATRIX**.
 
+### You can take a look at the examples in the **Examples** folder.
+
 ## Usage just got easier! (Finally)
 1. Download the zip archive and unpack it wherever convenient.
 2. Open the console and install the packages from **requierements.txt** with the command: `pip install -r requirements.txt`
