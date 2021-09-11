@@ -1,3 +1,5 @@
+"""A module containing service functions. Not that it was so necessary, but it does not clog up the main file
+"""
 
 import os
 import pygame as pg

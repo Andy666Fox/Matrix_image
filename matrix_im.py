@@ -2,7 +2,7 @@
 import pygame as pg
 import numpy as np
 import random
-from funcs import  symbols_extract, get_image_size, extension_check
+from funcs import *
 
 
 # In order not to write the path to the file every time and not to go into the code myself, 
