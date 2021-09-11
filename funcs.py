@@ -28,6 +28,13 @@ def get_image_size(path: str) -> tuple:
     return pg.image.load(path).get_size()
 
 def extension_check(path: str) -> str:
+    
+    """Utility function needed to convert images to .jpg format
+
+    Returns:
+        [str]: The function converts the image to .jpg format, removes the original image and returns the path to the converted image
+    """
+    
     if path[-4:] == '.jpg':
         pass
     else:
