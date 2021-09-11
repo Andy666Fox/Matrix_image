@@ -14,6 +14,9 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 3. Now with the command `python matrix_im.py` run the program. At startup, you need to specify the path to the image and the desired size of characters (If you do not understand what I mean, try entering values ​​from *1 to 20*, you will immediately notice the differences)
 
 ## Changes, people, changes!:
+### --------------11.09.21--------------
+### --------------31.08.21--------------
+
 1. Now this piece of .... code interacts with the user! Image and character size can be selected.This console crap is a temporary measure. Do not worry))
 
     ![](readme_images/interact.png)
