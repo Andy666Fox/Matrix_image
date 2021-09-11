@@ -18,4 +18,10 @@ def symbols_extract(path_to_image: str) -> list:
     return res
 
 def get_image_size(path: str) -> tuple:
+    
+    """Utility function for determining the size of the image
+
+    Returns:
+        [tuple]: Returns a tuple with the dimensions of the image
+    """
     return pg.image.load(path).get_size()
