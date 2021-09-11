@@ -3,6 +3,9 @@
 ![](readme_images/demo.gif)
 
 ## About project
+The project is based on the repository of the excellent developer [Standalone Coder](https://github.com/StanislavPetrovV)
+
+
 The project is inspired by the film Matrix and a Youtube video by *Standalone Coder* (~~And sprinkled with my deep dark fantasies~~). Substituting any image you can get its version from the **MATRIX**.
 
 ## Usage just got easier! (Finally)
