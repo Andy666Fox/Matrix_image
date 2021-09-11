@@ -17,6 +17,9 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 
 ## Changes, people, changes!:
 ### --------------11.09.21--------------
+
+1. It happened! Now the program will automatically convert the file to the required format
+2. Also some minor edits were made. Docstring, typings and other nonsense that nobody cares about
 ### --------------31.08.21--------------
 
 1. Now this piece of .... code interacts with the user! Image and character size can be selected.This console crap is a temporary measure. Do not worry))
