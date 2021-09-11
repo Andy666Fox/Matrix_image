@@ -121,7 +121,7 @@ class MatrixVision:
     """Convenient class helper
     """
     def __init__(self):
-        self.RES = self.WIDTH, self.HEIGHT = get_image_size(image_path)
+        self.RES = self.WIDTH, self.HEIGHT = get_image_size(image_path) 
         pg.init()
         self.screen = pg.display.set_mode(self.RES)
         self.surface = pg.Surface(self.RES)
