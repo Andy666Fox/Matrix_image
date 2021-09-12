@@ -8,7 +8,10 @@ from funcs import *
 # In order not to write the path to the file every time and not to go into the code myself, 
 # I left this task to the user. Now it's both convenient and cool
 image_path = input('Enter path to the image: ')
+
+# Wrapping the file path into a function to convert the image format
 image_path = extension_check(image_path)
+
 font_SIZE = int(input('Change the font size (1-20): '))
 
 
