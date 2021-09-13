@@ -13,7 +13,10 @@ image_path, font_SIZE = set_params_window()
 
 
 # Wrapping the file path into a function to convert the image format
-image_path = extension_check(image_path)
+try:
+    image_path = extension_check(image_path)
+except Exception:
+    error_popup()
 
 
 
@@ -32,15 +35,14 @@ class Matrix:
         self.SIZE = self.ROWS, self.COLS = app.HEIGHT // font_size, app.WIDTH // font_size
         self.katakana = np.array([random.choice(symbols_extract(image_path)) for i in range(100)] + [' ' for i in range(5)])
         self.font = pg.font.SysFont('Arial', font_size, bold=True)
-
         # This block is responsible for creating a random position for symbols and adding them to the screen.
         self.matrix = np.random.choice(self.katakana, self.SIZE)
         self.char_intervals = np.random.randint(25, 50, size=self.SIZE)
         self.cols_speed = np.random.randint(100, 250, size=self.SIZE)
         self.prerendered_chars = self.get_prerendered_chars()
-
         # TODO  Make image change more easier
         self.image = self.get_image(image_path)
+
 
     def get_image(self, path_to_file: str) -> pg.PixelArray:
         """Function for representing an image as pg.PixelArray (analog of np.array)
@@ -149,10 +151,8 @@ class MatrixVision:
 
 
 if __name__ == '__main__':
-    try:
-        app = MatrixVision()
-        app.run()
-    except:
-        error_popup()
+    app = MatrixVision()
+    app.run()
+
     
 
