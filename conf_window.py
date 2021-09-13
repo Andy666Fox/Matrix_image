@@ -14,7 +14,7 @@ def set_params_window():
     window.close()
 
     path = values[0]  
-    size = values[1]  if type(values[1]) == int else None
+    size = values[1]  if type(values[1]) == int else 7
     
     if event[0]:
         window.close()
