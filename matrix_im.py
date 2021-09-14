@@ -7,7 +7,7 @@ from conf_window import  *
 
 from loguru import logger  
 
-logger.add('matrix_log.txt', format="<green>{time}</green> <level>{message}</level>", level='INFO')
+logger.add('matrix_log.txt', format="<green>{time}</green> <level>{message}</level>")
 
 
 # In order not to write the path to the file every time and not to go into the code myself, 
