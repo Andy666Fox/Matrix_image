@@ -16,6 +16,11 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 3. Now with the command `python matrix_im.py` run the program. At startup, you need to specify the path to the image and the desired size of characters (If you do not understand what I mean, try entering values ​​from *1 to 20*, you will immediately notice the differences)
 
 ## Changes, people, changes!:
+### --------------14.09.21--------------
+
+1. Added logging.While working through the ~~dog's pussy~~, but this is fixable.
+
+2. Little fixes... Well, you get the idea.
 ### --------------13.09.21--------------
 
 1. Finally, a convenient window for selecting a file and parameters has been added. Goodbye console.(Actually, no, the program itself is still run through the console, fuck)
