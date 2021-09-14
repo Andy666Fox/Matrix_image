@@ -46,8 +46,6 @@ class Matrix:
         self.prerendered_chars = self.get_prerendered_chars()
         # TODO  Make image change more easier
         self.image = self.get_image(image_path)
-        
-        logger.info('Matrix class __init__() worked fine')
 
 
     def get_image(self, path_to_file: str) -> pg.PixelArray:
@@ -63,11 +61,7 @@ class Matrix:
         image = pg.image.load(path_to_file)
         image = pg.transform.scale(image, self.app.RES)
         pixel_array = pg.pixelarray.PixelArray(image)
-        
-        logger.info('Matrix class get_image() worked fine')
-        
         return pixel_array
-    
 
     # We need to pre-render some chars for optimization
     # TODO Get more optimize this block
@@ -83,10 +77,6 @@ class Matrix:
         for char in self.katakana:
             prerendered_char = {(char, color): self.font.render(char, True, color) for color in char_colors}
             prerendered_chars.update(prerendered_char)
-            
-        
-        logger.info('Matrix class prerendered_chars() worked fine')    
-            
         return prerendered_chars
 
     
@@ -162,6 +152,8 @@ class MatrixVision:
             [exit() for i in pg.event.get() if i.type == pg.QUIT]
             pg.display.flip()
             self.clock.tick(30)
+    
+    logger.log('INFO', f'INPUT:\n    Image Path: {image_path}\n    Font Size: {font_SIZE}\n --Program worked fine--\n --------------------------------')
 
 
 if __name__ == '__main__':
