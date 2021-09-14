@@ -5,6 +5,10 @@ import random
 from funcs import *
 from conf_window import  *
 
+from loguru import logger  
+
+logger.add('matrix_log.txt', format="<green>{time}</green> <level>{message}</level>", level='INFO')
+
 
 # In order not to write the path to the file every time and not to go into the code myself, 
 # I left this task to the user. Now it's both convenient and cool
@@ -42,6 +46,8 @@ class Matrix:
         self.prerendered_chars = self.get_prerendered_chars()
         # TODO  Make image change more easier
         self.image = self.get_image(image_path)
+        
+        logger.info('Matrix class __init__() worked fine')
 
 
     def get_image(self, path_to_file: str) -> pg.PixelArray:
@@ -57,7 +63,11 @@ class Matrix:
         image = pg.image.load(path_to_file)
         image = pg.transform.scale(image, self.app.RES)
         pixel_array = pg.pixelarray.PixelArray(image)
+        
+        logger.info('Matrix class get_image() worked fine')
+        
         return pixel_array
+    
 
     # We need to pre-render some chars for optimization
     # TODO Get more optimize this block
@@ -73,6 +83,10 @@ class Matrix:
         for char in self.katakana:
             prerendered_char = {(char, color): self.font.render(char, True, color) for color in char_colors}
             prerendered_chars.update(prerendered_char)
+            
+        
+        logger.info('Matrix class prerendered_chars() worked fine')    
+            
         return prerendered_chars
 
     
