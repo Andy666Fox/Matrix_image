@@ -1,5 +1,1 @@
-2021-09-14T22:02:15.893937+0300 INPUT:
-    Image Path: zero.jpg
-    Font Size: 7
- --Program worked fine--
- --------------------------------
+
