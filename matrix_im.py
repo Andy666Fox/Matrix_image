@@ -72,6 +72,7 @@ class Matrix:
         Returns:
             [dict]: Returns a dictionary of symbols ready to be drawn
         """
+        
         char_colors = [(0, green, 0) for green in range(256)]
         prerendered_chars = {}
         for char in self.katakana:
@@ -83,6 +84,7 @@ class Matrix:
     def run(self):
         """Program start function
         """
+        
         frames = pg.time.get_ticks()
         self.change_chars(frames)
         self.shift_column(frames)
@@ -95,6 +97,7 @@ class Matrix:
         Args:
             frames (int): number of frames per unit of time
         """
+        
         num_cols = np.argwhere(frames % self.cols_speed == 0)
         num_cols = num_cols[:, 1]
         num_cols = np.unique(num_cols)
@@ -107,6 +110,7 @@ class Matrix:
         Args:
             frames (int): number of frames per unit of time
         """
+        
         mask = np.argwhere(frames % self.char_intervals == 0)
         new_chars = np.random.choice(self.katakana, mask.shape[0])
         self.matrix[mask[:, 0], mask[:, 1]] = new_chars
@@ -115,6 +119,7 @@ class Matrix:
     def draw(self):
         """Main draw function
         """
+        
         for y, row in enumerate(self.matrix):
             for x, char in enumerate(row):
                 if char:
@@ -134,7 +139,9 @@ class MatrixVision:
     """
     def __init__(self):
         self.RES = self.WIDTH, self.HEIGHT = get_image_size(image_path) 
+        
         pg.init()
+        
         self.screen = pg.display.set_mode(self.RES)
         self.surface = pg.Surface(self.RES)
         self.clock = pg.time.Clock()
@@ -142,11 +149,13 @@ class MatrixVision:
 
 
     def draw(self):
+        
         self.surface.fill(pg.Color('black'))
         self.matrix.run()
         self.screen.blit(self.surface, (0, 0))
     
     def run(self):
+        
         while True:
             self.draw()
             [exit() for i in pg.event.get() if i.type == pg.QUIT]
@@ -157,6 +166,7 @@ class MatrixVision:
 
 
 if __name__ == '__main__':
+    
     app = MatrixVision()
     app.run()
 
