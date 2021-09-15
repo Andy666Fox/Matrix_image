@@ -14,12 +14,12 @@ def set_params_window():
     window.close()
 
     path = values[0]  
-    size = values[1]  if type(values[1]) == int else 7
+    size = values[1]
     
     if event[0]:
         window.close()
         
-    return path, size
+    return path, int(size) 
 
 
 def error_popup():
