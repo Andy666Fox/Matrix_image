@@ -44,6 +44,6 @@ def extension_check(path: str) -> str:
         bg = Image.new("RGB", image.size, (255,255,255))
         bg.paste(image,image)
         bg.save(f'{path[:-4]}.jpg')
-        os.remove(path)
+        #os.remove(path)
 
     return path[:-4] + '.jpg'
