@@ -7,7 +7,7 @@ from PIL import  Image, ImageEnhance
 
 def symbols_extract(path_to_image: str) -> list:
     
-    """Main function for symbols extracting
+    """ Utility function for extracting characters for further display
     
     Inputs:
         string [str]: path to file
@@ -18,6 +18,7 @@ def symbols_extract(path_to_image: str) -> list:
     
     corrected_name = os.path.basename(path_to_image)[:-4]
     res = [elem for elem in corrected_name]
+    
     return res
 
 def get_image_size(path: str) -> tuple:
@@ -48,10 +49,19 @@ def extension_check(path: str) -> str:
 
     return path[:-4] + '.jpg'
 
-def im_contrast(image_path: str, enhance: int) -> str:
+def im_contrast(image_path: str, contrast_num: int) -> str:
+    
+    """ Utility function increasing the contrast of the image
+
+    Returns:
+        str : Returns the path to a new image with increased contrast 
+    """
+    
     im = Image.open('zero.jpg')
-    enhancer = ImageEnhance.Contrast(im)
-    im_output = enhancer.enhance(enhance)
+    
+    contrast = ImageEnhance.Contrast(im)
+    
+    im_output = contrast.enhance(contrast_num)
     
     new_path = f'redux_{image_path}'
     im_output.save(new_path)

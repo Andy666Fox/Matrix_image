@@ -20,7 +20,7 @@ symbols = image_path
 # Wrapping the file path into a function to convert the image format
 try:
     image_path = extension_check(image_path)
-    image_path = im_contrast(image_path, 7)
+    image_path = im_contrast(image_path, 10)
 except Exception:
     error_popup()
 
@@ -164,7 +164,7 @@ class MatrixVision:
             pg.display.flip()
             self.clock.tick(30)
     
-    logger.log('INFO', f'INPUT:\n    Image Path: {image_path}\n    Font Size: {font_SIZE}\n --Program worked fine--\n --------------------------------')
+    logger.log('INFO', f'INPUT:\n    | Image Path: {image_path}|\n    | Font Size: {font_SIZE} |\n    | --Program worked fine-- |\n--------------------------------')
 
 
 if __name__ == '__main__':

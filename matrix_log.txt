@@ -1,31 +1,41 @@
 
-2021-09-24T11:32:54.361414+0300 INPUT:
-    Image Path: zero.jpg
-    Font Size: 8
- --Program worked fine--
- --------------------------------
-2021-09-24T11:34:50.009685+0300 INPUT:
-    Image Path: zero.jpg
-    Font Size: 8
- --Program worked fine--
- --------------------------------
-2021-09-26T12:53:43.117677+0300 INPUT:
-    Image Path: redux_zero.jpg
-    Font Size: 7
- --Program worked fine--
- --------------------------------
-2021-09-26T12:56:40.897724+0300 INPUT:
-    Image Path: redux_zero.jpg
-    Font Size: 7
- --Program worked fine--
- --------------------------------
-2021-09-26T13:05:03.796065+0300 INPUT:
-    Image Path: x_zero.jpg
-    Font Size: 7
- --Program worked fine--
- --------------------------------
-2021-09-26T13:07:18.124893+0300 INPUT:
-    Image Path: x_zero.jpg
-    Font Size: 8
- --Program worked fine--
- --------------------------------
+2021-09-26T13:21:39.109913+0300 INPUT:
+    | Image Path: ('redux_zero.jpg', <PIL.Image.Image image mode=RGB size=704x910 at 0x28D463ED100>)|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T13:21:58.186887+0300 INPUT:
+    | Image Path: ('redux_zero.jpg', <PIL.Image.Image image mode=RGB size=704x910 at 0x1DA50230100>)|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T13:22:36.010386+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T13:23:04.705459+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T13:23:39.003816+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T13:27:33.519039+0300 INPUT:
+    | Image Path: zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T13:28:23.849413+0300 INPUT:
+    | Image Path: zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T13:29:04.179561+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
