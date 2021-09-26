@@ -1,1 +1,26 @@
 
+2021-09-26T13:39:20.629206+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T13:59:04.226761+0300 INPUT:
+    | Image Path: zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T14:00:45.714614+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T14:02:17.447087+0300 INPUT:
+    | Image Path: zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-26T14:03:23.123320+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------

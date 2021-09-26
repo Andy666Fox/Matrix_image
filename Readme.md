@@ -1,6 +1,6 @@
 # Matrix Image
 
-![](readme_images/demo.gif)
+![](readme_images/demo_1.gif)
 
 ## About project
 The project is based on the repository of the excellent developer [Standalone Coder](https://github.com/StanislavPetrovV)
@@ -16,6 +16,13 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 3. Now with the command `python matrix_im.py` run the program. At startup, you need to specify the path to the image and the desired size of characters (If you do not understand what I mean, try entering values ​​from *1 to 20*, you will immediately notice the differences)
 
 ## Changes, people, changes!:
+### --------------26.09.21--------------
+
+1. I promised to work on the color rendition. It turned out to be easier than I thought! By increasing the contrast of the image, it becomes brighter and richer
+
+![](readme_images/improve.png)
+
+2. I worked on the Docstrings, increased the readability of the code, made minor edits and that's it.
 ### --------------14.09.21--------------
 
 1. Added logging.While working through the ~~dog's pussy~~, but this is fixable.
