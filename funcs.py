@@ -3,7 +3,7 @@
 
 import os
 import pygame as pg
-from PIL import  Image
+from PIL import  Image, ImageEnhance
 
 def symbols_extract(path_to_image: str) -> list:
     
@@ -47,3 +47,13 @@ def extension_check(path: str) -> str:
         #os.remove(path)
 
     return path[:-4] + '.jpg'
+
+def im_contrast(image_path: str) -> str:
+    im = Image.open('zero.jpg')
+    enhancer = ImageEnhance.Contrast(im)
+    im_output = enhancer.enhance(2)
+    
+    new_path = f'redux_{image_path}'
+    im_output.save(new_path)
+    
+    return new_path

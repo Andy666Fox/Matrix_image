@@ -19,6 +19,7 @@ image_path, font_SIZE = set_params_window()
 # Wrapping the file path into a function to convert the image format
 try:
     image_path = extension_check(image_path)
+    image_path = im_contrast(image_path)
 except Exception:
     error_popup()
 
