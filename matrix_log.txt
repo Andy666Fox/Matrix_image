@@ -14,3 +14,18 @@
     Font Size: 7
  --Program worked fine--
  --------------------------------
+2021-09-26T12:56:40.897724+0300 INPUT:
+    Image Path: redux_zero.jpg
+    Font Size: 7
+ --Program worked fine--
+ --------------------------------
+2021-09-26T13:05:03.796065+0300 INPUT:
+    Image Path: x_zero.jpg
+    Font Size: 7
+ --Program worked fine--
+ --------------------------------
+2021-09-26T13:07:18.124893+0300 INPUT:
+    Image Path: x_zero.jpg
+    Font Size: 8
+ --Program worked fine--
+ --------------------------------

@@ -48,10 +48,10 @@ def extension_check(path: str) -> str:
 
     return path[:-4] + '.jpg'
 
-def im_contrast(image_path: str) -> str:
+def im_contrast(image_path: str, enhance: int) -> str:
     im = Image.open('zero.jpg')
     enhancer = ImageEnhance.Contrast(im)
-    im_output = enhancer.enhance(2)
+    im_output = enhancer.enhance(enhance)
     
     new_path = f'redux_{image_path}'
     im_output.save(new_path)

@@ -15,11 +15,12 @@ logger.add('matrix_log.txt', format="<green>{time}</green> <level>{message}</lev
 
 image_path, font_SIZE = set_params_window()
 
+symbols = image_path
 
 # Wrapping the file path into a function to convert the image format
 try:
     image_path = extension_check(image_path)
-    image_path = im_contrast(image_path)
+    image_path = im_contrast(image_path, 7)
 except Exception:
     error_popup()
 
@@ -38,7 +39,7 @@ class Matrix:
         self.app = app
         self.FONT_SIZE = font_size
         self.SIZE = self.ROWS, self.COLS = app.HEIGHT // font_size, app.WIDTH // font_size
-        self.katakana = np.array([random.choice(symbols_extract(image_path)) for i in range(100)] + [' ' for i in range(5)])
+        self.katakana = np.array([random.choice(symbols_extract(symbols)) for i in range(100)] + [' ' for i in range(5)])
         self.font = pg.font.SysFont('Arial', font_size, bold=True)
         # This block is responsible for creating a random position for symbols and adding them to the screen.
         self.matrix = np.random.choice(self.katakana, self.SIZE)
