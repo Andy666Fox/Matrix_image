@@ -14,3 +14,33 @@
     | Font Size: 6 |
     | --Program worked fine-- |
 --------------------------------
+2021-09-30T12:14:49.772468+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-30T12:15:46.311051+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-30T12:20:21.652184+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-30T12:21:06.871388+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-30T12:21:26.029000+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-30T12:21:46.237864+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+    | --Program worked fine-- |
+--------------------------------

@@ -13,9 +13,9 @@ logger.add('matrix_log.txt', format="<green>{time}</green> <level>{message}</lev
 # In order not to write the path to the file every time and not to go into the code myself, 
 # I left this task to the user. Now it's both convenient and cool
 
-image_path, font_SIZE = set_params_window()
+image_path, font_SIZE, sym_stroke = set_params_window()
 
-symbols = image_path
+symbols = sym_stroke if sym_stroke else symbols_extract(image_path)
 
 # Wrapping the file path into a function to convert the image format
 try:
@@ -39,7 +39,7 @@ class Matrix:
         self.app = app
         self.FONT_SIZE = font_size
         self.SIZE = self.ROWS, self.COLS = app.HEIGHT // font_size, app.WIDTH // font_size
-        self.katakana = np.array([random.choice(symbols_extract(symbols)) for i in range(100)] + [' ' for i in range(5)])
+        self.katakana = np.array([random.choice(symbols) for i in range(100)] + [' ' for i in range(5)])
         self.font = pg.font.SysFont('Arial', font_size, bold=True)
         # This block is responsible for creating a random position for symbols and adding them to the screen.
         self.matrix = np.random.choice(self.katakana, self.SIZE)
