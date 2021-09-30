@@ -16,6 +16,13 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 3. Now with the command `python matrix_im.py` run the program. At startup, you need to specify the path to the image and the desired size of characters (If you do not understand what I mean, try entering values ​​from *1 to 20*, you will immediately notice the differences)
 
 ## Changes, people, changes!:
+### --------------30.09.21--------------
+
+1. So here it is necessary to clarify. The ability to select symbols for the final display has been added. You can see this in the dialog box (A new input field has appeared). It works like this. If you entered your characters in this field for display, they will be used, if you did not enter, then as before, the characters are taken from the file name. It's simple. If a little confusing, you can play with this field and understand what I mean.
+
+![](readme_images/symbols.png)
+
+2. Minor edits made (contrast adjusted, docstrings updated)
 ### --------------26.09.21--------------
 
 1. I promised to work on the color rendition. It turned out to be easier than I thought! By increasing the contrast of the image, it becomes brighter and richer

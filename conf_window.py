@@ -26,7 +26,7 @@ def set_params_window():
 
     path = values[0]  
     size = values[1]
-    symbols = [elem for elem in values[2].strip(' ')] if values[2] else False
+    symbols = [elem for elem in values[2].replace(' ', '')] if values[2] else False
     
     if event[0]:
         window.close()
