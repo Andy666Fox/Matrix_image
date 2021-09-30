@@ -16,7 +16,7 @@ def symbols_extract(path_to_image: str) -> list:
         list [list]: List with symbols
     """
     
-    corrected_name = os.path.basename(path_to_image)[:-4]
+    corrected_name = str(os.path.basename(path_to_image)[:-4]).strip(' ')
     res = [elem for elem in corrected_name]
     
     return res
