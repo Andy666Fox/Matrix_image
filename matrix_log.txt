@@ -1,0 +1,10 @@
+2021-09-30T13:02:06.978304+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+    | --Program worked fine-- |
+--------------------------------
+2021-09-30T13:02:53.903096+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 7 |
+    | --Program worked fine-- |
+--------------------------------

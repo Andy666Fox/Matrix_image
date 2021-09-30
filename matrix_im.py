@@ -132,7 +132,7 @@ class Matrix:
                     _, red, green, blue = pg.Color(self.image[pos])
                     if red and green and blue:
                         color = (red + green + blue) // 3
-                        color = 255 if 240 < color < 250 else color
+                        color = 255 if 245 < color < 250 else color
                         char = self.prerendered_chars[(char, (0, color, 0))]
                         char.set_alpha(color)
                         self.app.surface.blit(char, pos)
