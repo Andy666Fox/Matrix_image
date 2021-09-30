@@ -9,6 +9,7 @@ def set_params_window():
         [str]: The path to the file entered by the user
         [int]: User-entered character size
         [str]: Symbols to display (Optional, see Readme)
+        
     """
     
     layout = [[sg.Text('                     MATRIX IMAGE')],
