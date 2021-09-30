@@ -13,7 +13,7 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 ## Usage just got easier! (Finally)
 1. Download the zip archive and unpack it wherever convenient.
 2. Open the console and install the packages from **requierements.txt** with the command: `pip install -r requirements.txt`
-3. Now with the command `python matrix_im.py` run the program. At startup, you need to specify the path to the image and the desired size of characters (If you do not understand what I mean, try entering values ​​from *1 to 20*, you will immediately notice the differences)
+3. Now with the command `python matrix_im.py` run the program. At startup, you need to specify the path to the image and the desired size of characters (If you do not understand what I mean, try entering values ​​from *1 to 20*, you will immediately notice the differences).Also, now you can choose the symbols for display yourself (optionally, see updates from 09/30/21)
 
 ## Changes, people, changes!:
 ### --------------30.09.21--------------
