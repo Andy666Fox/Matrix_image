@@ -17,12 +17,13 @@ image_path, font_SIZE, sym_stroke = set_params_window()
 
 # Small change on the next line. If the user has entered their characters in the dialog box, they will be used for display.
 # If not, as before, the characters are taken from the file name (more in the Readme)
+
 symbols = sym_stroke if sym_stroke else symbols_extract(image_path)
 
 # Wrapping the file path into a function to convert the image format
 try:
     image_path = extension_check(image_path)
-    image_path = im_contrast(image_path, 7)
+    image_path = im_contrast(image_path, 5)
 except Exception:
     error_popup()
 
