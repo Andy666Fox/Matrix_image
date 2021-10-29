@@ -1,6 +1,6 @@
 # Matrix Image
 
-![](readme_images/demo_1.gif)
+![](readme_images/demo.gif)
 
 ## About project
 The project is based on the repository of the excellent developer [Standalone Coder](https://github.com/StanislavPetrovV)
