@@ -5,3 +5,21 @@
       | Changed symbols: ['z', 'e', 'r', 'o'] |
     | --Program worked fine-- |
 --------------------------------
+2021-11-07T14:31:10.108782+0300 INPUT:
+    | Image Path: zero.jpg|
+    | Font Size: 8 |
+      | Changed symbols: ['z', 'e', 'r', 'o'] |
+    | --Program worked fine-- |
+--------------------------------
+2021-11-07T14:31:56.099403+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+      | Changed symbols: ['z', 'e', 'r', 'o'] |
+    | --Program worked fine-- |
+--------------------------------
+2021-11-07T14:37:23.618509+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+      | Changed symbols: ['z', 'e', 'r', 'o'] |
+    | --Program worked fine-- |
+--------------------------------

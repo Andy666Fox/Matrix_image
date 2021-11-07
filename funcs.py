@@ -49,11 +49,20 @@ def extension_check(path: str) -> str:
 
     return path[:-4] + '.jpg'
 
+
 def im_contrast(path_to_file: str) -> str:
+    
+    """ Utility function increasing the contrast of the image
+
+    Returns:
+        str : Returns the path to a new image with increased contrast 
+    """
+    
     im = Image.open(path_to_file)
+    
     enhancer = ImageEnhance.Sharpness(im)
     res = enhancer.enhance(4)
-
+    
     enhancer = ImageEnhance.Contrast(res)
     res = enhancer.enhance(2)
     
