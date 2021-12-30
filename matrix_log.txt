@@ -1,1 +1,7 @@
 
+2021-12-25T20:10:29.443196+0300 INPUT:
+    | Image Path: redux_dd.jpg|
+    | Font Size: 7 |
+      | Changed symbols: ['C', 'R', 'A', 'B'] |
+    | --Program worked fine-- |
+--------------------------------
