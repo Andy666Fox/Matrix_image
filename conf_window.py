@@ -1,3 +1,4 @@
+from lib2to3.pygram import Symbols
 import PySimpleGUI as sg
 
 
@@ -18,6 +19,7 @@ def set_params_window():
               [sg.Text('Enter symbols(optional): '), sg.InputText()],
               [sg.Button('OK')]]
     
+    
     window = sg.Window('MATRIX IMAGE', layout, (20,300))      
     
 
@@ -26,7 +28,16 @@ def set_params_window():
 
     path = values[0]  
     size = values[1]
-    symbols = [elem for elem in values[2].replace(' ', '')] if values[2] else False
+    
+    
+    # Check to special flag available
+    if values[2]:
+        if values[2].lower() == 'ascii':
+            symbols = [x for x in '!"#$%&()*+,-./'] 
+        elif values[2].lower() == 'digit':
+            symbols = [x for x in '0123456789']
+        else:
+            [elem for elem in values[2].replace(' ', '')]
     
     if event[0]:
         window.close()

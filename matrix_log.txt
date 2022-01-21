@@ -5,3 +5,21 @@
       | Changed symbols: ['C', 'R', 'A', 'B'] |
     | --Program worked fine-- |
 --------------------------------
+2022-01-21T19:38:08.775429+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+      | Changed symbols: ['D', 'R', 'A', 'G'] |
+    | --Program worked fine-- |
+--------------------------------
+2022-01-21T19:46:20.006563+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+      | Changed symbols: ['!', '"', '#', '$', '%', '&', '(', ')', '*', '+', ',', '-', '.', '/'] |
+    | --Program worked fine-- |
+--------------------------------
+2022-01-21T19:46:44.634527+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 8 |
+      | Changed symbols: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] |
+    | --Program worked fine-- |
+--------------------------------
