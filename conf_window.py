@@ -13,9 +13,9 @@ def set_params_window():
     """
     
     layout = [[sg.Text('                     MATRIX IMAGE')],
-              [sg.Text('Enter path to file:'), sg.InputText()],
-              [sg.Text('Enter symbols size:'), sg.InputText()],
-              [sg.Text('Enter symbols(optional):'), sg.InputText()],
+              [sg.Text('Enter path to file: '), sg.InputText()],
+              [sg.Text('Enter symbols size: '), sg.InputText()],
+              [sg.Text('Enter symbols(optional): '), sg.InputText()],
               [sg.Button('OK')]]
     
     window = sg.Window('MATRIX IMAGE', layout, (20,300))      
