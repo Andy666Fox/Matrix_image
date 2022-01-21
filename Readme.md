@@ -20,6 +20,7 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 Hi guys. Procrastination is finally subdued, and I sat down to finish my business here. Let's get down to business, I added the ability to select a specific character set in the main settings window. I think pictures will make it clearer.
 
 1.There are only two of them so far, but this is only the beginning, right? (I hope)
+
 "ascii" - Use standard ascii characters (!"#$%&()*+,-./)
 
 "digit" - Only numbers
