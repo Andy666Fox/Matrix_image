@@ -5,6 +5,8 @@ import os
 import pygame as pg
 from PIL import  Image, ImageEnhance
 
+#----------------------------------------------------------------
+
 def symbols_extract(path_to_image: str) -> list:
     
     """ Utility function for extracting characters for further display
@@ -20,6 +22,8 @@ def symbols_extract(path_to_image: str) -> list:
     res = [elem for elem in corrected_name]
     
     return res
+
+#----------------------------------------------------------------
 
 def get_image_size(path: str) -> tuple:
     
@@ -48,6 +52,8 @@ def extension_check(path: str) -> str:
         #os.remove(path)
 
     return path[:-4] + '.jpg'
+
+#----------------------------------------------------------------
 
 
 def im_contrast(path_to_file: str) -> str:

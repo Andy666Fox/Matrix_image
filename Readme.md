@@ -16,6 +16,22 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 3. Now with the command `python matrix_im.py` run the program. At startup, you need to specify the path to the image and the desired size of characters (If you do not understand what I mean, try entering values ​​from *1 to 20*, you will immediately notice the differences).Also, now you can choose the symbols for display yourself (optionally, see updates from 09/30/21)
 
 ## Changes, people, changes!:
+### --------------21.01.22--------------
+Hi guys. Procrastination is finally subdued, and I sat down to finish my business here. Let's get down to business, I added the ability to select a specific character set in the main settings window. I think pictures will make it clearer.
+
+1.There are only two of them so far, but this is only the beginning, right? (I hope)
+"ascii" - Use standard ascii characters (!"#$%&()*+,-./)
+
+"digit" - Only numbers
+
+![](readme_images/sym_conf_win.png)
+
+![](readme_images/sym_conf.png)
+
+
+
+
+
 ### --------------07.11.21--------------
 
 1. I've been worried about the problem in the im_contrast function for a long time. It improved the brightness of the image, but at the same time it simply destroyed the dark areas. I have corrected this misunderstanding.
