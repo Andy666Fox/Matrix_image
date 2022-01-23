@@ -169,7 +169,7 @@ class MatrixVision:
             pg.display.flip()
             self.clock.tick(30)
     
-    logger.log('INFO', f'INPUT:\n    | Image Path: {image_path}|\n    | Font Size: {font_SIZE} |\n      | Changed symbols: {symbols} |\n    | --Program worked fine-- |\n' + '-' * 30)
+    logger.log('INFO', f'INPUT:\n    | Image Path: {image_path}|\n    | Font Size: {font_SIZE} |\n     | Changed symbols: {symbols} |\n    | --Program worked fine-- |\n' + '-' * 30)
 
 
 if __name__ == '__main__':
