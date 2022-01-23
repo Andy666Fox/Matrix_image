@@ -3,6 +3,7 @@
 
 import os
 import pygame as pg
+import PIL
 from PIL import  Image, ImageEnhance
 
 #----------------------------------------------------------------
@@ -18,8 +19,8 @@ def symbols_extract(path_to_image: str) -> list:
         list [list]: List with symbols
     """
     
-    corrected_name = str(os.path.basename(path_to_image)[:-4]).strip(' ')
-    res = [elem for elem in corrected_name]
+    corrected_name: str = str(os.path.basename(path_to_image)[:-4]).strip(' ')
+    res: list[str] = [elem for elem in corrected_name]
     
     return res
 
@@ -33,6 +34,8 @@ def get_image_size(path: str) -> tuple:
         [tuple]: Returns a tuple with the dimensions of the image
     """
     return pg.image.load(path).get_size()
+
+#----------------------------------------------------------------
 
 def extension_check(path: str) -> str:
     
@@ -64,7 +67,7 @@ def im_contrast(path_to_file: str) -> str:
         str : Returns the path to a new image with increased contrast 
     """
     
-    im = Image.open(path_to_file)
+    im: PIL.Image = Image.open(path_to_file)
     
     enhancer = ImageEnhance.Sharpness(im)
     res = enhancer.enhance(4)
