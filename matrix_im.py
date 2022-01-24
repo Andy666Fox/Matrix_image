@@ -1,5 +1,6 @@
 # import libraries
 
+from turtle import color
 import pygame as pg
 import numpy as np
 import random
@@ -14,7 +15,7 @@ logger.add('matrix_log.txt', format="<green>{time}</green> <level>{message}</lev
 # In order not to write the path to the file every time and not to go into the code myself, 
 # I left this task to the user. Now it's both convenient and cool
 
-image_path, font_SIZE, sym_stroke = set_params_window()
+image_path, font_SIZE, sym_stroke, im_color = set_params_window()
 
 # Small change on the next line. If the user has entered their characters in the dialog box, they will be used for display.
 # If not, as before, the characters are taken from the file name (more in the Readme)
@@ -50,7 +51,7 @@ class Matrix:
         self.matrix = np.random.choice(self.katakana, self.SIZE)
         self.char_intervals = np.random.randint(25, 50, size=self.SIZE)
         self.cols_speed = np.random.randint(100, 250, size=self.SIZE)
-        self.prerendered_chars = self.get_prerendered_chars()
+        self.prerendered_chars, self.color = self.get_prerendered_chars(color=im_color)
         
         self.image = self.get_image(image_path)
 
@@ -72,7 +73,7 @@ class Matrix:
 
     # We need to pre-render some chars for optimization
     # TODO Get more optimize this block
-    def get_prerendered_chars(self):
+    def get_prerendered_chars(self, color='green'):
         """It is quite expensive to prepare and render symbols at runtime.
            This function prepares a block of symbols before executing the program. All that remains is to draw them.
 
@@ -80,12 +81,17 @@ class Matrix:
             [dict]: Returns a dictionary of symbols ready to be drawn
         """
         
-        char_colors = [(0, green, 0) for green in range(256)]
+        if color == 'red':
+            char_colors = [(red, 0, 0) for red in range(256)]
+        elif color == 'blue':
+            char_colors = [(0, 0, blue) for blue in range(256)]
+        else:
+            char_colors = [(0, green, 0) for green in range(256)]
         prerendered_chars = {}
         for char in self.katakana:
             prerendered_char = {(char, color): self.font.render(char, True, color) for color in char_colors}
             prerendered_chars.update(prerendered_char)
-        return prerendered_chars
+        return prerendered_chars, color
 
     
     def run(self):
@@ -135,7 +141,12 @@ class Matrix:
                     if red and green and blue:
                         color = (red + green + blue) // 3
                         color = 255 if 245 < color < 250 else color
-                        char = self.prerendered_chars[(char, (0, color, 0))]
+                        if self.color == 'red':
+                            char = self.prerendered_chars[(char, (color, 0, 0))]
+                        elif self.color == 'blue':
+                            char = self.prerendered_chars[(char, (0, 0, color))]
+                        else:
+                            char = self.prerendered_chars[(char, (0, color, 0))]
                         char.set_alpha(color)
                         self.app.surface.blit(char, pos)
                         
@@ -169,7 +180,7 @@ class MatrixVision:
             pg.display.flip()
             self.clock.tick(30)
     
-    logger.log('INFO', f'INPUT:\n    | Image Path: {image_path}|\n    | Font Size: {font_SIZE} |\n     | Changed symbols: {symbols} |\n    | --Program worked fine-- |\n' + '-' * 30)
+    logger.log('INFO', f'INPUT:\n    | Image Path: {image_path}|\n    | Font Size: {font_SIZE} |\n    | Changed symbols: {symbols} |\n    | Changed color: {im_color} |\n    | --Program worked fine-- |\n' + '-' * 30)
 
 
 if __name__ == '__main__':

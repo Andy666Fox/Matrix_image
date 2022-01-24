@@ -20,6 +20,7 @@ def set_params_window():
               [sg.Text('Enter path to file: '), sg.InputText()],
               [sg.Text('Enter symbols size: '), sg.InputText()],
               [sg.Text('Enter symbols(optional): '), sg.InputText()],
+              [sg.Text('Enter color(optional): '), sg.InputText()],
               [sg.Button('OK')]]
     
     
@@ -31,19 +32,21 @@ def set_params_window():
 
     path = values[0]  
     size = values[1]
+    codec = values[2].lower()
+    color = values[3].lower()
 
     
     # Check to special flag available
     
-    if values[2].lower() in codecs:
-        symbols = codecs[values[2]]
+    if codec in codecs:
+        symbols = codecs[codec]
     else:
         symbols = [elem for elem in values[2].replace(' ', '')]
     
     if event[0]:
         window.close()
         
-    return path, int(size), symbols
+    return path, int(size), symbols, color
 
 
 def error_popup():
