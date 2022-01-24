@@ -3,7 +3,7 @@ import PySimpleGUI as sg
 
 
 # Dictionary with symbols flags (more in ReadMe)
-codecs = {'ascii': '!"#$%&()*+,-./', 'digit': '0123456789',  'arrow': '-><-', 'dollar': '$$$', 'author': 'godovorez', 'uwu': '(UwU)'}
+codecs = {'ascii': '!"#$%&()*+,-./', 'digit': '0123456789',  'arrow': '-><-', 'bucks': '$$$', 'author': 'godovorez', 'uwu': '(UwU)'}
 
 def set_params_window():
     

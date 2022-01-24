@@ -16,6 +16,17 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 3. Now with the command `python matrix_im.py` run the program. At startup, you need to specify the path to the image and the desired size of characters (If you do not understand what I mean, try entering values ​​from *1 to 20*, you will immediately notice the differences).Also, now you can choose the symbols for display yourself (optionally, see updates from 09/30/21)
 
 ## Changes, people, changes!:
+### --------------24.01.22--------------
+In less than a couple of days, I added even more symbol flags. The full list will be below.
+
+1. ascii - '!"#$%&()*+,-./'
+2. digit - '0123456789'
+3. arrow - '-><-'
+4. bucks - '$$$'
+5. author - 'godovorez'
+6. uwu - '(UwU)'
+
+
 ### --------------21.01.22--------------
 Hi guys. Procrastination is finally subdued, and I sat down to finish my business here. Let's get down to business, I added the ability to select a specific character set in the main settings window. I think pictures will make it clearer.
 
