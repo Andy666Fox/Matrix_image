@@ -37,3 +37,10 @@
     | Changed color: blue |
     | --Program worked fine-- |
 ------------------------------
+2022-01-25T02:53:37.496580+0300 INPUT:
+    | Image Path: redux_zero.jpg|
+    | Font Size: 9 |
+    | Changed symbols: (UwU) |
+    | Changed color: blue |
+    | --Program worked fine-- |
+------------------------------

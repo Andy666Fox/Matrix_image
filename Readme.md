@@ -17,6 +17,12 @@ The project is inspired by the film Matrix and a Youtube video by *Standalone Co
 
 ## Changes, people, changes!:
 ### --------------24.01.22--------------
+3:48 PM... OOOok This was not included in the plans, but now you can change colors! A separate column has been added to the main settings window. There are only three colors so far (red, green, blue). What are you looking at? I'm working on it...
+
+![](readme_images/color_ch.png)
+![](readme_images/color_ch_ex.png)
+
+### --------------24.01.22--------------
 In less than a couple of days, I added even more symbol flags. The full list will be below.
 
 1. ascii - '!"#$%&()*+,-./'
