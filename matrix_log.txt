@@ -1,13 +1,1 @@
 
-2022-01-24T15:28:45.704550+0300 INPUT:
-    | Image Path: redux_zero.jpg|
-    | Font Size: 8 |
-     | Changed symbols: (UwU) |
-    | --Program worked fine-- |
-------------------------------
-2022-01-24T15:29:49.660946+0300 INPUT:
-    | Image Path: redux_zero.jpg|
-    | Font Size: 8 |
-     | Changed symbols: godovorez |
-    | --Program worked fine-- |
-------------------------------
