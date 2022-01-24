@@ -104,6 +104,6 @@ Hi guys. Procrastination is finally subdued, and I sat down to finish my busines
 5. Well, I wrote some comments so that in a year I wouldn’t be fucking crazy about my genius.
 
 ## TODO: 
-1. Add the ability to change the base color
-2. ~~Optimize this shit~~ (I am looking towards using the **numba** module in some functions)
+1. ~~Add the ability to change the base color~~
+2. ~~Optimize this shit (I am looking towards using the **numba** module in some functions)~~
 3. ~~Now the problem with not quite correct color rendition is obvious. I'm working on this too.~~
