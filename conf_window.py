@@ -2,6 +2,9 @@ from lib2to3.pygram import Symbols
 import PySimpleGUI as sg
 
 
+# Dictionary with symbols flags (more in ReadMe)
+codecs = {'ascii': '!"#$%&()*+,-./', 'digit': '0123456789',  'arrow': '-><-', 'dollar': '$$$', 'author': 'godovorez', 'uwu': '(UwU)'}
+
 def set_params_window():
     
     """Function of the main dialog box and transfer of the entered data to the main file
@@ -28,16 +31,14 @@ def set_params_window():
 
     path = values[0]  
     size = values[1]
-    
+
     
     # Check to special flag available
-    if values[2]:
-        if values[2].lower() == 'ascii':
-            symbols = [x for x in '!"#$%&()*+,-./'] 
-        elif values[2].lower() == 'digit':
-            symbols = [x for x in '0123456789']
-        else:
-            [elem for elem in values[2].replace(' ', '')]
+    
+    if values[2].lower() in codecs:
+        symbols = codecs[values[2]]
+    else:
+        symbols = [elem for elem in values[2].replace(' ', '')]
     
     if event[0]:
         window.close()
