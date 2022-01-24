@@ -2,3 +2,4 @@ pygame
 numpy
 Pillow
 pysimplegui
+loguru
