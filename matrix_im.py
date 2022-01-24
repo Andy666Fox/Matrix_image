@@ -15,7 +15,7 @@ logger.add('matrix_log.txt', format="<green>{time}</green> <level>{message}</lev
 # In order not to write the path to the file every time and not to go into the code myself, 
 # I left this task to the user. Now it's both convenient and cool
 
-image_path, font_SIZE, sym_stroke, im_color = set_params_window()
+image_path, font_SIZE, sym_stroke, im_color = set_params_window() # Take info from main settings window
 
 # Small change on the next line. If the user has entered their characters in the dialog box, they will be used for display.
 # If not, as before, the characters are taken from the file name (more in the Readme)
