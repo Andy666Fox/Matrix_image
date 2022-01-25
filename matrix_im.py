@@ -1,6 +1,5 @@
 # import libraries
 
-from turtle import color
 import pygame as pg
 import numpy as np
 import random
@@ -44,11 +43,11 @@ class Matrix:
         self.app = app
         self.FONT_SIZE = font_size
         self.SIZE = self.ROWS, self.COLS = app.HEIGHT // font_size, app.WIDTH // font_size
-        self.katakana = np.array([random.choice(symbols) for i in range(100)] + [' ' for i in range(5)])
+        self.symbols = np.array([random.choice(symbols) for i in range(100)] + [' ' for i in range(5)])
         self.font = pg.font.SysFont('Arial', font_size, bold=True)
         
         # This block is responsible for creating a random position for symbols and adding them to the screen.
-        self.matrix = np.random.choice(self.katakana, self.SIZE)
+        self.matrix = np.random.choice(self.symbols, self.SIZE)
         self.char_intervals = np.random.randint(25, 50, size=self.SIZE)
         self.cols_speed = np.random.randint(100, 250, size=self.SIZE)
         self.prerendered_chars, self.color = self.get_prerendered_chars(color=im_color)
@@ -89,7 +88,7 @@ class Matrix:
         else:
             char_colors = [(0, green, 0) for green in range(256)]
         prerendered_chars = {}
-        for char in self.katakana:
+        for char in self.symbols:
             prerendered_char = {(char, color): self.font.render(char, True, color) for color in char_colors}
             prerendered_chars.update(prerendered_char)
         return prerendered_chars, color
@@ -126,7 +125,7 @@ class Matrix:
         """
         
         mask = np.argwhere(frames % self.char_intervals == 0)
-        new_chars = np.random.choice(self.katakana, mask.shape[0])
+        new_chars = np.random.choice(self.symbols, mask.shape[0])
         self.matrix[mask[:, 0], mask[:, 1]] = new_chars
 
     

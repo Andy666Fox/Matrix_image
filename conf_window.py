@@ -18,7 +18,7 @@ def set_params_window():
     
     layout = [[sg.Text('                     MATRIX IMAGE')],           # \
               [sg.Text('Enter path to file: '), sg.InputText()],        #  \
-              [sg.Text('Enter symbols size: '), sg.InputText()],        #   This settings window too big for me oni-chan TODO
+              [sg.Text('Enter symbols size: '), sg.InputText()],        #   TODO This settings window too big for me oni-chan 
               [sg.Text('Enter symbols(optional): '), sg.InputText()],   #  /
               [sg.Text('Enter color(optional): '), sg.InputText()],     # /
               [sg.Button('OK')]]
