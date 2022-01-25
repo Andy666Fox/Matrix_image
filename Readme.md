@@ -98,7 +98,7 @@ Hi guys. Procrastination is finally subdued, and I sat down to finish my busines
 1. ~~Now this piece of .... code interacts with the user! Image and character size can be selected.This console crap is a temporary measure. Do not worry))~~ (**Fixed 09.13.21**)
 
 
-2. Now the window is resized to fit the image. no more stretched **Untranslatable Russian word** ~~ЕБАЛЬНИКОВ~~
+2. Now the window is resized to fit the image. No more stretched **Untranslatable Russian word** ~~ЕБАЛЬНИКОВ~~
 3. Several annoying functions were moved to a separate file
 4. You can see that the symbols that make up the image are not random and are individual for each of them. (In fact, there is no smart one, the symbols are taken from the name of the image itself)
 5. Well, I wrote some comments so that in a year I wouldn’t be fucking crazy about my genius.
