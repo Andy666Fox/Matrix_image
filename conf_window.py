@@ -10,9 +10,10 @@ def set_params_window():
     """Function of the main dialog box and transfer of the entered data to the main file
 
     Returns:
-        [str]: The path to the file entered by the user
-        [int]: User-entered character size
-        [str]: Symbols to display (Optional, see Readme)
+        'Enter path to file': [str]: The path to the file entered by the user
+        'Enter symbols size': [int]: User-entered character size
+        'Enter symbols':      [str]: Symbols to display (Optional, see Readme)
+        'Enter color':        [str]: Color change
         
     """
     
