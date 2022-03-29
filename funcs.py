@@ -6,7 +6,7 @@ import pygame as pg
 import PIL
 from PIL import  Image, ImageEnhance
 
-#----------------------------------------------------------------
+
 
 def symbols_extract(path_to_image: str) -> list:
     
@@ -24,7 +24,7 @@ def symbols_extract(path_to_image: str) -> list:
     
     return res
 
-#----------------------------------------------------------------
+
 
 def get_image_size(path: str) -> tuple:
     
@@ -35,7 +35,7 @@ def get_image_size(path: str) -> tuple:
     """
     return pg.image.load(path).get_size()
 
-#----------------------------------------------------------------
+
 
 def extension_check(path: str) -> str:
     
@@ -56,7 +56,7 @@ def extension_check(path: str) -> str:
 
     return path[:-4] + '.jpg'
 
-#----------------------------------------------------------------
+
 
 
 def im_contrast(path_to_file: str) -> str:

@@ -1,15 +1,1 @@
 
-2022-03-27T10:18:11.554267+0300 INPUT:
-    | Image Path: redux_vl.jpg|
-    | Font Size: 8 |
-    | Changed symbols: ['v', 'l', 'a', 'd', 'o', 's'] |
-    | Changed color:  |
-    | --Program worked fine-- |
-------------------------------
-2022-03-27T10:20:07.201173+0300 INPUT:
-    | Image Path: redux_zero.jpg|
-    | Font Size: 8 |
-    | Changed symbols: !"#$%&()*+,-./ |
-    | Changed color:  |
-    | --Program worked fine-- |
-------------------------------

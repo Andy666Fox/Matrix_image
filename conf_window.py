@@ -1,4 +1,3 @@
-from lib2to3.pygram import Symbols
 import PySimpleGUI as sg
 
 
