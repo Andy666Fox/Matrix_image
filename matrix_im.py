@@ -43,7 +43,7 @@ class Matrix:
         self.app = app
         self.FONT_SIZE = font_size
         self.SIZE = self.ROWS, self.COLS = app.HEIGHT // font_size, app.WIDTH // font_size
-        self.symbols = np.array([random.choice(symbols) for i in range(100)] + [' ' for i in range(5)])
+        self.symbols = np.array([random.choice(symbols) for _ in range(100)] + [' ' for _ in range(5)])
         self.font = pg.font.SysFont('Arial', font_size, bold=True)
         
         # This block is responsible for creating a random position for symbols and adding them to the screen.
