@@ -142,7 +142,7 @@ class Matrix:
                         color = (red + green + blue) // 3
                         color = 255 if 245 < color < 250 else color
                         
-                        # TODO WTF? Make this block more shorter
+                        # TODO WTF? Make this block shorter
                         if self.color == 'red':
                             char = self.prerendered_chars[(char, (color, 0, 0))]
                         elif self.color == 'blue':
@@ -180,7 +180,7 @@ class MatrixVision:
             self.draw()
             [exit() for i in pg.event.get() if i.type == pg.QUIT]
             pg.display.flip()
-            self.clock.tick(30)
+            self.clock.tick(60)
     
     # TODO optimize this shit
     logger.log('INFO', f'INPUT:\n    | Image Path: {image_path}|\n    | Font Size: {font_SIZE} |\n    | Changed symbols: {symbols} |\n    | Changed color: {im_color} |\n    | --Program worked fine-- |\n' + '-' * 30)
