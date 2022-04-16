@@ -2,17 +2,22 @@ import PySimpleGUI as sg
 
 
 # Dictionary with symbols flags (more in ReadMe)
-codecs = {'ascii': '!"#$%&()*+,-./', 'digit': '0123456789',  'arrow': '-><-', 'bucks': '$$$', 'author': 'godovorez', 'uwu': '(UwU)'}
+codecs = {'ascii': '!"#$%&()*+,-./', 
+          'digit': '0123456789',  
+          'arrow': '-><-', 
+          'bucks': '$$$', 
+          'author': 'godovorez', 
+          'uwu': '(UwU)'}
 
 def set_params_window():
     
     """Function of the main dialog box and transfer of the entered data to the main file
 
     Returns:
-        'Enter path to file': [str]: The path to the file entered by the user
-        'Enter symbols size': [int]: User-entered character size
-        'Enter symbols':      [str]: Symbols to display (Optional, see Readme)
-        'Enter color':        [str]: Color change
+        Path to File:  [str]: The path to the file entered by the user
+        Symbol Size :  [int]: User-entered character size
+        Symdols     :  [str]: Symbols to display (Optional, see Readme)
+        Color       :  [str]: Color change
         
     """
     

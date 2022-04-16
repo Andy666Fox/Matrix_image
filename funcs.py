@@ -75,7 +75,7 @@ def im_contrast(path_to_file: str) -> str:
     enhancer = ImageEnhance.Contrast(res)
     res = enhancer.enhance(2)
     
-    new_path = f'redux_{path_to_file}'
+    new_path: str = f'redux_{path_to_file}'
     res.save(new_path)
     
     return new_path

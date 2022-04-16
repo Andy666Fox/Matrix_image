@@ -25,6 +25,7 @@ symbols = sym_stroke if sym_stroke else symbols_extract(image_path)
 try:
     image_path = extension_check(image_path)
     image_path = im_contrast(image_path)
+    
 except Exception:
     error_popup()
 
@@ -75,9 +76,12 @@ class Matrix:
     def get_prerendered_chars(self, color='green'):
         """It is quite expensive to prepare and render symbols at runtime.
            This function prepares a block of symbols before executing the program. All that remains is to draw them.
+           
+        Input:
+            Color [str]: The input is given only the color that the characters will be displayed. Default - green
 
         Returns:
-            [dict]: Returns a dictionary of symbols ready to be drawn
+            Chars [dict]: Returns a dictionary of symbols ready to be drawn
         """
         
         # Checking of changed color
