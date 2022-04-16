@@ -57,10 +57,11 @@ class Matrix:
 
 
     def get_image(self, path_to_file: str) -> pg.PixelArray:
+        
         """Function for representing an image as pg.PixelArray (analog of np.array)
 
-        Args:
-            path_to_file ([str]): The path to the file from the user
+        Input:
+            [str]: The path to the file from the user
 
         Returns:
             [pg.PixelArray]: Format for further processing
@@ -73,6 +74,7 @@ class Matrix:
 
     # We need to pre-render some chars for optimization
     # TODO Get more optimize this block
+    
     def get_prerendered_chars(self, color='green'):
         """It is quite expensive to prepare and render symbols at runtime.
            This function prepares a block of symbols before executing the program. All that remains is to draw them.
@@ -99,6 +101,7 @@ class Matrix:
 
     
     def run(self):
+        
         """Program start function
         """
         
@@ -111,8 +114,8 @@ class Matrix:
     def shift_column(self, frames: int) -> np.roll:
         """Function for calculating the speed of falling symbols
 
-        Args:
-            frames (int): number of frames per unit of time
+        Input:
+            [int]: number of frames per unit of time
         """
         
         num_cols = np.argwhere(frames % self.cols_speed == 0)
@@ -124,8 +127,8 @@ class Matrix:
     def change_chars(self, frames: int) -> list:
         """Function for creating a new set of symbols
 
-        Args:
-            frames (int): number of frames per unit of time
+        Input:
+            [int]: number of frames per unit of time
         """
         
         mask = np.argwhere(frames % self.char_intervals == 0)
@@ -157,7 +160,7 @@ class Matrix:
                         self.app.surface.blit(char, pos)
                         
 
-# Main worker
+
 class MatrixVision:
     """Convenient class helper
     """
