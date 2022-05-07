@@ -1,1 +1,15 @@
 
+2022-05-07T11:32:49.305174+0300 INPUT:
+    | Image Path: DD|
+    | Font Size: 8 |
+    | Changed symbols: !"#$%&()*+,-./ |
+    | Changed color:  |
+    | --Program worked fine-- |
+------------------------------
+2022-05-07T11:33:13.832315+0300 INPUT:
+    | Image Path: redux_DD.jpg|
+    | Font Size: 8 |
+    | Changed symbols: !"#$%&()*+,-./ |
+    | Changed color:  |
+    | --Program worked fine-- |
+------------------------------

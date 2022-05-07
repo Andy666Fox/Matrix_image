@@ -101,7 +101,9 @@ class Matrix:
             char_colors = [(0, 0, blue) for blue in range(256)]
         else:
             char_colors = [(0, green, 0) for green in range(256)]
+            
         prerendered_chars = {}
+        
         for char in self.symbols:
             prerendered_char = {
                 (char, color): self.font.render(char, True, color)
