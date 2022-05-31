@@ -81,7 +81,7 @@ class Matrix:
         return pixel_array
 
     # We need to pre-render some chars for optimization
-    # TODO Get more optimize this block
+    # TODO Optimize this block
 
     def get_prerendered_chars(self, color="green"):
         """It is quite expensive to prepare and render symbols at runtime.
@@ -165,6 +165,7 @@ class Matrix:
                             char = self.prerendered_chars[(char, (0, 0, color))]
                         else:
                             char = self.prerendered_chars[(char, (0, color, 0))]
+                            
                         char.set_alpha(color)
                         self.app.surface.blit(char, pos)
 
@@ -197,15 +198,13 @@ class MatrixVision:
             pg.display.flip()
             self.clock.tick(60)
 
-    # TODO optimize this shit
-    logger.log(
-        "INFO",
-        f"INPUT:\n    | Image Path: {image_path}|\n    | Font Size: {font_SIZE} |\n    | Changed symbols: {symbols} |\n    | Changed color: {im_color} |\n    | --Program worked fine-- |\n"
-        + "-" * 30,
-    )
 
 
 if __name__ == "__main__":
-
+    
+    logger.log('INFO', f'Filename: {image_path}\
+                         Symbols: {sym_stroke}')
+    
     app = MatrixVision()
     app.run()
+    
