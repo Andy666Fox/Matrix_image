@@ -81,7 +81,6 @@ class Matrix:
         return pixel_array
 
     # We need to pre-render some chars for optimization
-    # TODO Optimize this block
 
     def get_prerendered_chars(self, color="green"):
         """It is quite expensive to prepare and render symbols at runtime.
@@ -158,7 +157,6 @@ class Matrix:
                         color = (red + green + blue) // 3
                         color = 255 if 245 < color < 250 else color
 
-                        # TODO WTF? Make this block shorter
                         if self.color == "red":
                             char = self.prerendered_chars[(char, (color, 0, 0))]
                         elif self.color == "blue":
